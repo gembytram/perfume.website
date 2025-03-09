@@ -6,23 +6,23 @@ export default function Features() {
       icon: ThumbsUp,
       title: "Chất lượng và an toàn",
       description:
-        "Chúng tôi cung cấp cho bạn những sản phẩm food chất lượng cao nhất trên thị trường",
+        "Fleurs cam kết sử dụng nguyên liệu an toàn, quy trình sản xuất nghiêm ngặt, mang đến nước hoa chất lượng tốt nhất.",
       bgColor: "bg-blue-50",
       iconColor: "text-blue-400",
     },
     {
       icon: FirstAid,
-      title: "Dòng sản phẩm lành mạnh",
+      title: "Hương thơm tinh tế và độc đáo",
       description:
-        "Chúng tôi mang đến nhiều lựa chọn thức ăn để đáp ứng nhu cầu đặc biệt của thú cưng của bạn",
+        "Chúng tôi tạo ra những mùi hương mang dấu ấn riêng, kết hợp hài hòa giữa tinh dầu thiên nhiên và công nghệ hiện đại.",
       iconColor: "text-red-400",
       bgColor: "bg-red-50",
     },
     {
       icon: Sprout,
-      title: "Thân thiện với môi trường",
+      title: "Bao bì tối giãn và bền vững",
       description:
-        "Được làm từ nguyên liệu tự nhiên và bao bì thân thiện với môi trường",
+        "Thiết kế hiện đại, thân thiện với môi trường, giảm thiểu lãng phí nhưng vẫn đảm bảo sự tinh tế khi đến tay bạn.",
       bgColor: "bg-green-50",
       iconColor: "text-green-400",
     },
@@ -31,8 +31,8 @@ export default function Features() {
   return (
     <section className="py-16 px-4 bg-white dark:bg-bg-dark-1">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 dark:text-pri-2  text-pri-1">
-          Điểm nổi bật của CatCorner
+        <h2 className="text-4xl font-bold text-center text-pri-1 mb-16 dark:text-pri-2">
+          Điểm nổi bật của Fleurs
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 text-center">

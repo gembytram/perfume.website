@@ -44,7 +44,7 @@ export default function ContactSection() {
             Gọi cho chúng tôi
           </h3>
           <div className="space-y-2 mb-6 sm:mb-8">
-            {["0795-849-949", "0865-359-075"].map((phone) => (
+            {["0868-589-371", "0345-421-574"].map((phone) => (
               <div key={phone} className="flex gap-3 items-center">
                 <Phone className="w-4 h-4 text-neutral-950" />
                 <Link

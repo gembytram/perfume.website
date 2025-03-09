@@ -6,7 +6,7 @@ export default function ReturnPolicyPage() {
 
       {/* Introduction */}
       <p className="text-lg mb-6">
-        Chúng tôi tại CatCorner cam kết mang đến cho bạn và thú cưng của bạn
+        Chúng tôi tại Fleurs cam kết mang đến cho bạn
         những sản phẩm chất lượng tốt nhất. Tuy nhiên, nếu bạn không hoàn toàn
         hài lòng với sản phẩm đã mua, chúng tôi sẵn sàng hỗ trợ việc đổi trả
         theo các điều khoản dưới đây.
@@ -37,7 +37,7 @@ export default function ReturnPolicyPage() {
             yêu cầu đổi trả, kèm theo mã đơn hàng và lý do đổi trả.
           </li>
           <li>
-            Kiểm tra và xác nhận: Đội ngũ CatCorner sẽ kiểm tra yêu cầu của bạn
+            Kiểm tra và xác nhận: Đội ngũ Fleurs sẽ kiểm tra yêu cầu của bạn
             và phản hồi trong vòng 2 ngày làm việc.
           </li>
           <li>
@@ -60,7 +60,7 @@ export default function ReturnPolicyPage() {
           <li>
             Phí đổi hàng: Miễn phí đổi hàng nếu sản phẩm bị lỗi từ nhà sản xuất.
             Nếu lý do đổi hàng là do khách hàng thay đổi ý định, phí đổi trả sẽ
-            là 30.000đ.
+            là 20.000đ.
           </li>
           <li>
             Phí hoàn trả: Trong trường hợp hoàn tiền, phí vận chuyển ban đầu sẽ
@@ -77,10 +77,9 @@ export default function ReturnPolicyPage() {
         <ul className="list-disc list-inside text-lg ">
           <li>Sản phẩm đã qua sử dụng hoặc hư hỏng do lỗi của khách hàng.</li>
           <li>Sản phẩm không còn tem nhãn hoặc thiếu phụ kiện đi kèm.</li>
-          <li>
-            Các sản phẩm thức ăn và phụ kiện chăm sóc thú cưng không thể đổi trả
-            vì lý do vệ sinh.
-          </li>
+      
+      
+         
         </ul>
       </div>
 
@@ -88,12 +87,12 @@ export default function ReturnPolicyPage() {
       <div>
         <h3 className="font-bold mb-4">5. Liên hệ hỗ trợ</h3>
         <p className="text-lg ">
-          Nếu bạn có bất kỳ thắc mắc nào về chính sách đổi trả của CatCorner,
+          Nếu bạn có bất kỳ thắc mắc nào về chính sách đổi trả của Fleurs,
           vui lòng liên hệ chúng tôi qua:
         </p>
         <ul className="list-disc list-inside text-lg ">
-          <li>Email: support@catcorner.vn</li>
-          <li>Hotline: 0795.849.949</li>
+          <li>Email: fleur.hoa@gmail.com</li>
+          <li>Hotline: 0868.589.371</li>
         </ul>
         <p className="text-lg">Chúng tôi luôn sẵn sàng hỗ trợ bạn!</p>
       </div>

@@ -79,7 +79,7 @@ export default function ProductSlider() {
   return (
     <div className="container w-full sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto py-4 sm:py-6 md:py-8">
       <h2 className="text-2xl sm:text-3xl font-bold text-center text-pri-1 dark:text-pri-2 mb-4 sm:mb-6 md:mb-8">
-        Hôm nay tại CatCorner
+        Hôm nay tại Fleurs
       </h2>
 
       <div className="relative px-4 sm:px-8 md:px-12">

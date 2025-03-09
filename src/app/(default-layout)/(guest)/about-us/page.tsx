@@ -3,13 +3,12 @@ export default function AboutUsPage() {
     <div className="container mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-4xl font-bold">CATCORNER</h1>
-        <h2 className="font-semibold">Cửa hàng vật dụng dành cho mèo</h2>
+        <h1 className="text-4xl font-bold">Fleurs</h1>
+        <h2 className="font-semibold">Fleurs Boutique</h2>
         <hr className="my-4 w-2/6 mx-auto" />
         <p className="text-xl">
-          CatCorner tự hào là một trong những cửa hàng phụ kiện cho mèo lớn và
-          đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong
-          cuộc chơi của hàng triệu tín đồ yêu Thú cưng từ Nam ra Bắc.
+          Fleurs tự hào là một trong những thương hiệu nước hoa uy tín và
+          được yêu thích nhất tại TP.HCM, nơi thỏa mãn niềm đam mê hương thơm của hàng triệu tín đồ từ Nam ra Bắc.
         </p>
       </div>
 
