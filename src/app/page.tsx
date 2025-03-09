@@ -108,7 +108,7 @@ export default function Home() {
         <div className="w-full relative">
           <Features />
         </div>
-        <div className="w-full relative bg-[#FFF6D8]">
+        <div className="w-full relative bg-pri-5">
           <ClientFeedback />
         </div>
         <NewProducts />

@@ -58,8 +58,8 @@ export default function ProductSlider() {
       variant_name: hasMultipleVariants
         ? product.variant_names.map((v: any) => v || "")
         : [],
-      product_price: product.lowest_price,
-      lowest_price: product.lowest_price * product.highest_discount,
+      product_price: product.product_price,
+      lowest_price: product.lowest_price,
       highest_discount: product.highest_discount,
     };
   };
@@ -78,7 +78,7 @@ export default function ProductSlider() {
 
   return (
     <div className="container w-full sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto py-4 sm:py-6 md:py-8">
-      <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#1B4242] dark:text-pri-2 mb-4 sm:mb-6 md:mb-8">
+      <h2 className="text-2xl sm:text-3xl font-bold text-center text-pri-1 dark:text-pri-2 mb-4 sm:mb-6 md:mb-8">
         Hôm nay tại CatCorner
       </h2>
 

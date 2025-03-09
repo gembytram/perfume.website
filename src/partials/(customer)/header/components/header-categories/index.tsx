@@ -81,7 +81,7 @@ export default function CustomerHeaderCategories() {
   return (
     <div className="relative group">
       {/* Trigger */}
-      <div className="hidden laptop:flex cursor-pointer text-pri-1 dark:text-white hover:text-teal-700 dark:hover:text-teal-300">
+      <div className="hidden laptop:flex cursor-pointer text-pri-1 dark:text-white hover:text-pri-3 dark:hover:text-teal-300">
         <span className="ml-2 font-semibold mr-2">Danh mục</span>
         <ChevronDown />
       </div>

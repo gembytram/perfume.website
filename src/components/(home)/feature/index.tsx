@@ -31,7 +31,7 @@ export default function Features() {
   return (
     <section className="py-16 px-4 bg-white dark:bg-bg-dark-1">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 dark:text-pri-2">
+        <h2 className="text-4xl font-bold text-center mb-16 dark:text-pri-2  text-pri-1">
           Điểm nổi bật của CatCorner
         </h2>
 
@@ -45,7 +45,7 @@ export default function Features() {
                   strokeWidth={1.5}
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-4 dark:text-gray-300">
+              <h3 className="text-2xl font-bold mb-4 dark:text-gray-300 text-pri-1">
                 {feature.title}
               </h3>
               <p className="text-black dark:text-gray-400">

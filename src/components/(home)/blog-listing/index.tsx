@@ -76,7 +76,7 @@ export default function BlogListing() {
     <div className="container mx-auto w-full px-4 sm:w-[90%] md:w-[85%] lg:w-[80%] py-4 sm:py-6">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 md:mb-12">
         <div className="mb-4 sm:mb-0">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-2">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-pri-1">
             Khám phá thêm các chủ đề...
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground dark:text-gray-200">
@@ -84,7 +84,7 @@ export default function BlogListing() {
           </p>
         </div>
         <Link href="/blogs">
-          <Button className="bg-[#1B4242] hover:bg-[#1B4242]/90 text-white text-sm sm:text-base">
+          <Button className="bg-pri-1 hover:bg-[#F6A6BB]/90 text-white text-sm sm:text-base">
             Khám phá thêm
           </Button>
         </Link>

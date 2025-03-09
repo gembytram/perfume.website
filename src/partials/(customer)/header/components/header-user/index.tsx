@@ -64,7 +64,7 @@ export default function CustomerHeaderUser() {
       <div className="relative group">
         <a
           href="#"
-          className="tablet:hidden laptop:flex text-pri-1 dark:text-white hover:text-teal-700 dark:hover:text-teal-300 items-center">
+          className="tablet:hidden laptop:flex text-pri-1 dark:text-white hover:text-pri-3 dark:hover:text-teal-300 items-center">
           <Image
             src={session.user?.userAvt || "/imgs/test.jpg"}
             alt="User Avatar"

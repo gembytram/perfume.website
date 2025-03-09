@@ -76,7 +76,7 @@ export default function OrderTrackingResult() {
           {/* Logo */}
           <div className="flex justify-center md:justify-start items-center">
             <Image
-              src="/imgs/logo-pri.webp"
+              src="/imgs/logo-pri.jpg"
               alt="Logo CATCORNER"
               width={241}
               height={85}

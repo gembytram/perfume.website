@@ -33,12 +33,12 @@ export default function CustomerHeaderLogo() {
         <div className="hidden laptop:block">
           <Image
             src={
-              theme === "dark" ? "/imgs/logo-white.webp" : "/imgs/logo-pri.webp"
+              theme === "dark" ? "/imgs/logo-white.jpg" : "/imgs/logo-pri.jpg"
             }
             alt={`Logo CATCORNER ${theme === "dark" ? "white" : "primary"}`}
             width={120}
             height={40}
-            className="object-contain"
+            className="object-none"
           />
         </div>
       </a>

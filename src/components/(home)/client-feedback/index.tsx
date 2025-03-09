@@ -58,7 +58,7 @@ export default function ClientFeedback() {
     <div className="max-w-6xl mx-auto px-4 py-16">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6 w-[75%]">
-          <h2 className="text-4xl font-bold tracking-tight text-black">
+          <h2 className="text-3xl font-bold tracking-tight text-pri-1">
             Phản hồi từ khách hàng
           </h2>
           <p className="text-xl text-muted-foreground dark:text-gray-600">

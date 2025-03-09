@@ -9,14 +9,14 @@ import Link from "next/link";
 export default function ContactSection() {
   return (
     <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12 w-full sm:w-[90%] md:w-[85%] lg:w-[80%]">
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 dark:text-pri-2">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 dark:text-pri-2 text-pri-1">
         Có câu hỏi nào không? Đừng ngần ngại liên hệ với chúng tôi!
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
         {/* Messages Section */}
         <div>
-          <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">
+          <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-pri-1">
             Tin nhắn
           </h3>
           <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 dark:text-gray-300">
@@ -40,7 +40,7 @@ export default function ContactSection() {
 
         {/* Call us Section */}
         <div className="w-full mx-auto flex flex-col">
-          <h3 className="text-lg sm:text-xl font-semibold mb-4">
+          <h3 className="text-lg sm:text-xl font-semibold mb-4 text-pri-1">
             Gọi cho chúng tôi
           </h3>
           <div className="space-y-2 mb-6 sm:mb-8">
@@ -57,7 +57,7 @@ export default function ContactSection() {
           </div>
           {/* Subscribe Section */}
           <div>
-            <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-4 text-pri-1">
               Đăng ký nhận thông tin qua Email
             </h3>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -77,7 +77,7 @@ export default function ContactSection() {
 
         {/* Social Media Section */}
         <div className="flex flex-col">
-          <h3 className="text-lg sm:text-xl font-semibold mb-4">
+          <h3 className="text-lg sm:text-xl font-semibold mb-4 text-pri-1">
             Kết nối với chúng tôi trên mạng xã hội
           </h3>
           <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 dark:text-gray-300">

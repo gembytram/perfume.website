@@ -9,7 +9,7 @@ export default function CustomerFooter() {
         {/* Logo */}
         <div className="flex justify-center items-center tablet:justify-start">
           <Image
-            src="/imgs/logo-white.webp"
+            src="/imgs/logo-white.jpg"
             alt="Logo CATCORNER"
             width={241}
             height={85}
@@ -20,27 +20,27 @@ export default function CustomerFooter() {
         <div className="flex flex-col tablet:flex-row tablet:space-x-8 laptop:space-x-16 desktop:space-x-20 laptop:text-lg desktop:text-xl font-medium mt-4 tablet:mt-0">
           <Link
             href="/"
-            className="hover:text-teal-300 transition-colors flex justify-center py-3 tablet:py-0">
+            className="hover:text-pri-2 transition-colors flex justify-center py-3 tablet:py-0">
             Trang chủ
           </Link>
           <Link
             href="/blogs"
-            className="hover:text-teal-300 transition-colors flex justify-center py-3 tablet:py-0">
+            className="hover:text-pri-2 transition-colors flex justify-center py-3 tablet:py-0">
             Bài viết
           </Link>
           <Link
             href="/about-us"
-            className="hover:text-teal-300 transition-colors flex justify-center py-3 tablet:py-0">
+            className="hover:text-pri-2 transition-colors flex justify-center py-3 tablet:py-0">
             Về chúng tôi
           </Link>
           <Link
             href="/privacy-policy"
-            className="hover:text-teal-300 transition-colors flex justify-center py-3 tablet:py-0">
+            className="hover:text-pri-2 transition-colors flex justify-center py-3 tablet:py-0">
             Bảo mật
           </Link>
           <Link
             href="/delivery-and-payment"
-            className="hover:text-teal-300 transition-colors flex justify-center py-3 tablet:py-0">
+            className="hover:text-pri-2 transition-colors flex justify-center py-3 tablet:py-0">
             Đổi trả
           </Link>
         </div>
@@ -49,7 +49,7 @@ export default function CustomerFooter() {
       {/* Text ở cuối */}
       <div className="container mx-auto text-center mt-4">
         <p className="desktop:text-sm phone:text-xs text-gray-400 font-light">
-          © CatCorner 2024. All rights reserved
+          © Fleurs 2024. All rights reserved
         </p>
       </div>
     </footer>
