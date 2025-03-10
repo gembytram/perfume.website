@@ -34,7 +34,7 @@ export default function CustomerHeaderCart() {
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
             <li className="p-4 flex hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
               <Image
-                src="/imgs/test.jpg"
+                src="/imgs/cart/test1.png"
                 alt="tes-timg"
                 width={50}
                 height={50}
@@ -42,14 +42,14 @@ export default function CustomerHeaderCart() {
               />
               <div>
                 <p className="text-sm text-gray-700 dark:text-white font-semibold">
-                  Váy Sơ Mi Ngắn Tay Sọc Xanh
-                </p>
-                <p className="text-sm text-red-500">₫139.000</p>
+                Nước hoa Fleurs VALENTINE&#39;S DAY - 50 ml
+                                </p>
+                <p className="text-sm text-red-500">₫315.000</p>
               </div>
             </li>
             <li className="p-4 flex hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
               <Image
-                src="/imgs/test.jpg"
+                src="/imgs/cart/test2.png"
                 alt="tes-timg"
                 width={50}
                 height={50}
@@ -57,14 +57,14 @@ export default function CustomerHeaderCart() {
               />
               <div>
                 <p className="text-sm text-gray-700 dark:text-white font-semibold">
-                  Váy Sơ Mi Ngắn Tay Sọc Xanh
+                  Nước hoa Fleurs LOSTS IN PARIS - 50 ml 
                 </p>
-                <p className="text-sm text-red-500">₫139.000</p>
+                <p className="text-sm text-red-500">₫275.500</p>
               </div>
             </li>
             <li className="p-4 flex hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
               <Image
-                src="/imgs/test.jpg"
+                src="/imgs/cart/test3.jpg"
                 alt="tes-timg"
                 width={50}
                 height={50}
@@ -72,16 +72,16 @@ export default function CustomerHeaderCart() {
               />
               <div>
                 <p className="text-sm text-gray-700 dark:text-white font-semibold">
-                  Váy Sơ Mi Ngắn Tay Sọc Xanh
+                  Nước hoa Fleurs GOLD - 50 ml
                 </p>
-                <p className="text-sm text-red-500">₫139.000</p>
+                <p className="text-sm text-red-500">₫340.000</p>
               </div>
             </li>
           </ul>
           <div className="mt-4 flex justify-end px-4">
             <a
               href="/cart"
-              className="text-sm text-white bg-teal-600 dark:bg-teal-700 px-4 py-2 rounded-md hover:bg-teal-700 dark:hover:bg-teal-500">
+              className="text-sm text-white bg-pri-1 dark:bg-teal-700 px-4 py-2 rounded-md hover:bg-pri-3 dark:hover:bg-teal-500">
               Xem Giỏ Hàng
             </a>
           </div>
