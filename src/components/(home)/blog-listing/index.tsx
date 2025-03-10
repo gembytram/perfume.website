@@ -80,7 +80,7 @@ export default function BlogListing() {
             Khám phá thêm các chủ đề...
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground dark:text-gray-200">
-            Đọc các lời khuyên chăm sóc cho mèo của bạn
+          Đọc thêm về những câu chuyện và cảm hứng đằng sau từng mùi hương của Fleurs
           </p>
         </div>
         <Link href="/blogs">

@@ -2,14 +2,11 @@ export default function AboutUsPage() {
   return (
     <div className="container mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg">
       {/* Header */}
-      <div className="text-center">
-        <h1 className="text-4xl font-bold">Fleurs</h1>
-        <h2 className="font-semibold">Fleurs Boutique</h2>
+      <div className="text-justify">
+        <h1 className="text-4xl font-bold text-center">Fleurs Perfume</h1>
         <hr className="my-4 w-2/6 mx-auto" />
-        <p className="text-xl">
-          Fleurs tự hào là một trong những thương hiệu nước hoa uy tín và
-          được yêu thích nhất tại TP.HCM, nơi thỏa mãn niềm đam mê hương thơm của hàng triệu tín đồ từ Nam ra Bắc.
-        </p>
+        <p className="text-xl">  Fleurs tự hào là một trong những thương hiệu nước hoa uy tín và
+        được yêu thích nhất tại TP.HCM, nơi thỏa mãn niềm đam mê hương thơm của hàng triệu tín đồ từ Nam ra Bắc. </p>
       </div>
 
       {/* Feature Section */}
@@ -20,10 +17,9 @@ export default function AboutUsPage() {
             alt="Chất lượng"
             className="mx-auto mb-4 w-12 h-12"
           />
-          <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-          <p className="text-gray-600 dark:text-gray-400">
-            Số lượng sản phẩm và dịch vụ tốt nhất với đa dạng, phong phú sẽ đáp
-            ứng tất cả nhu cầu mua sắm của bạn.
+          <p className="font-bold text-lg">Hương thơm đa dạng</p>
+          <p className="text-gray-600 dark:text-gray-400 text-justify">
+          Fleurs sở hữu những dòng nước hoa với nhiều tầng hương phong phú, từ thanh mát, dịu dàng đến nồng nàn, quyến rũ, đáp ứng mọi phong cách và sở thích của bạn
           </p>
         </div>
         <div className="bg-white dark:bg-gray-800 border rounded-lg p-6 text-center">
@@ -32,10 +28,9 @@ export default function AboutUsPage() {
             alt="Chăm sóc khách hàng"
             className="mx-auto mb-4 w-12 h-12"
           />
-          <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-          <p className="text-gray-600 dark:text-gray-400">
-            Tất cả khách hàng mua sắm tại ForCat có tổng hóa đơn mua sắm tích
-            lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.
+          <p className="font-bold text-lg">Ưu đãi đặc biệt</p>
+          <p className="text-gray-600 dark:text-gray-400 text-justify">
+          Khi mua sắm tại Fleurs và tích lũy đủ điểm, bạn sẽ có cơ hội nhận được những phần quà giá trị tương xứng, thay lời tri ân từ chúng tôi.
           </p>
         </div>
         <div className="bg-white dark:bg-gray-800 border rounded-lg p-6 text-center">
@@ -44,10 +39,9 @@ export default function AboutUsPage() {
             alt="Vận chuyển miễn phí"
             className="mx-auto mb-4 w-12 h-12"
           />
-          <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-          <p className="text-gray-600 dark:text-gray-400">
-            Miễn phí vận chuyển nội thành TP Hồ Chí Minh cho các đơn hàng từ
-            399.000đ trở lên.
+          <p className="font-bold text-lg">Dịch vụ giao hàng tận tâm</p>
+          <p className="text-gray-600 dark:text-gray-400 text-justify">
+          Fleurs miễn phí vận chuyển nội thành TP. Hồ Chí Minh cho các đơn hàng từ 999.000đ, giúp bạn dễ dàng sở hữu những chai nước hoa yêu thích.
           </p>
         </div>
       </div>
@@ -55,194 +49,53 @@ export default function AboutUsPage() {
       {/* About Section */}
       <div className="my-12">
         <h2 className="text-center font-medium">
-          CatCorner - Chúng tôi là ai?
+          Fleurs - Chúng tôi là ai?
         </h2>
         <hr className="my-4 w-2/6 mx-auto" />
-        <p className="text-center text-lg">
-          CatCorner là điểm đến lý tưởng cho những người yêu mèo, nơi mang đến
-          một thế giới rộng lớn của các vật phẩm độc đáo và chất lượng cho các
-          vị thần mèo của bạn. Với mục tiêu làm hài lòng cả mèo và chủ nhân của
-          chúng, chúng tôi tự hào là điểm đến đáng tin cậy để tìm kiếm mọi thứ
-          từ thức ăn, đồ chơi, đến đồ dùng và phụ kiện.
+        <p className="text-justify text-lg">
+          Fleurs là điểm đến lý tưởng cho những người yêu nước hoa, nơi mang đến một thế giới rộng lớn của các hương thơm độc đáo và tinh tế. 
+          Với mục tiêu khơi gợi cảm xúc và tôn vinh cá tính của mỗi người, chúng tôi tự hào là điểm đến đáng tin cậy để khám phá những mùi hương từ cổ điển đến hiện đại, từ dịu dàng đến quyến rũ.
         </p>
         <div className="grid grid-cols-1 gap-6 my-6">
           <img
-            src="/imgs/test.jpg"
+            src="/imgs/about-us/test.png"
             alt="Cat 1"
-            className="rounded-lg shadow-lg w-full h-[420px] object-cover"
+            className="rounded-lg shadow-lg w-full h-[600px] object-cover"
           />
         </div>
-        <p className="text-center font-light text-lg">
-          Chúng tôi hiểu rõ rằng mỗi chú mèo là một cá thể độc đáo với sở thích
-          và nhu cầu riêng biệt. Đó là lý do tại CatCorner, chúng tôi không chỉ
-          cung cấp các sản phẩm thông thường mà còn đưa ra những lựa chọn đa
-          dạng, phong phú để bạn có thể tìm thấy điều phù hợp nhất cho thú cưng
-          của mình. Từ những món đồ chơi kích thích trí thông minh đến các sản
-          phẩm thú vị giúp giải trí và rèn luyện sức khỏe, chúng tôi cam kết đem
-          đến trải nghiệm mua sắm đáng nhớ cho bạn và mèo của bạn.
+        <p className="text-justify font-light text-lg">
+        Chúng tôi hiểu rõ rằng mỗi chai nước hoa là một thế giới hương thơm độc đáo với sở thích và cá tính riêng biệt. 
+        Đó là lý do tại Fleurs, chúng tôi không chỉ mang đến những mùi hương quen thuộc mà còn kiến tạo nên những trải nghiệm khứu giác đa dạng, phong phú để bạn có thể tìm thấy hương thơm định danh cho chính mình. 
+        Từ những nốt hương tinh tế khơi gợi cảm xúc đến những tầng hương phức tạp thể hiện cá tính, chúng tôi cam kết mang đến hành trình khám phá hương thơm đáng nhớ cho bạn
         </p>
         <div className="grid grid-cols-1 gap-6 my-6">
           <img
-            src="/imgs/test.jpg"
+            src="/imgs/about-us/test2.png"
             alt="Cat 1"
-            className="rounded-lg shadow-lg w-full h-[420px] object-cover"
+            className="rounded-lg shadow-lg w-full h-[530px] object-cover"
           />
         </div>
-        <p className="text-center font-light text-lg">
-          Sản phẩm tại CatCorner không chỉ đảm bảo về chất lượng mà còn mang đậm
-          phong cách và sự độc đáo. Chúng tôi luôn cập nhật xu hướng mới nhất
-          trong cộng đồng yêu mèo để đảm bảo bạn luôn có những sản phẩm mới nhất
-          và phù hợp nhất với phong cách của bạn và thú cưng. Nếu bạn đang tìm
-          kiếm một nơi đáng tin cậy để mua sắm các vật phẩm cho mèo của bạn, hãy
-          ghé thăm CatCorner. Chúng tôi cam kết sẽ mang đến cho bạn trải nghiệm
-          mua sắm tốt nhất, đồng thời giúp thú cưng của bạn có cuộc sống thú vị
-          và hạnh phúc hơn.
+        <p className="text-justify font-light text-lg">
+        Chúng tôi luôn cập nhật xu hướng mới nhất trong cộng đồng yêu 1  nước hoa để đảm bảo bạn luôn có những mùi hương mới nhất và phù hợp nhất với phong cách của bạn. Nếu bạn đang tìm kiếm một nơi đáng tin cậy để khám phá các mùi hương cho bản thân, hãy ghé thăm Fleurs. Chúng tôi cam kết sẽ mang đến cho bạn trải nghiệm mua sắm tốt nhất, đồng thời giúp bạn có một cuộc sống thơm ngát và hạnh phúc hơn.
         </p>
         <div className="grid grid-cols-1 gap-6 my-6">
           <img
-            src="/imgs/test.jpg"
+            src="/imgs/about-us/test3.png"
             alt="Cat 1"
-            className="rounded-lg shadow-lg w-full h-[420px] object-cover"
+            className="rounded-lg shadow-lg w-full h-[1140px] object-cover"
           />
         </div>
-        <p className="text-center font-light text-lg">
-          Thế mạnh của chúng tôi là sự đa dạng và sáng tạo trong việc cung cấp
-          các sản phẩm và dịch vụ dành cho mèo. Chúng tôi tự hào về việc có một
-          đội ngũ nhân viên chuyên nghiệp và đam mê, luôn sẵn lòng tư vấn và hỗ
-          trợ khách hàng trong mọi vấn đề liên quan đến việc chăm sóc và nuôi
-          dưỡng mèo. Không chỉ là một cửa hàng bán lẻ thông thường, chúng tôi
-          còn là một trung tâm nơi mọi người có thể tìm kiếm thông tin và kiến
-          thức về mèo. Ngoài ra, chúng tôi luôn đặt mức giá cạnh tranh và cam
-          kết về chất lượng sản phẩm, giúp khách hàng có được sự hài lòng cao
-          nhất mỗi khi mua sắm tại CatCorner. Sự đa dạng trong sản phẩm cùng với
-          dịch vụ chăm sóc khách hàng tận tình và chuyên nghiệp là những điểm
-          mạnh đặc biệt của chúng tôi, giúp chúng tôi phục vụ và thu hút cộng
-          đồng người yêu mèo.
+        <p className="text-justify font-light text-lg">
+        Thế mạnh của chúng tôi là sự đa dạng và sáng tạo trong việc cung cấp các dòng nước hoa và dịch vụ trải nghiệm hương thơm. Chúng tôi tự hào về việc có một đội ngũ chuyên gia về hương thơm chuyên nghiệp và đam mê, luôn sẵn lòng tư vấn và hỗ trợ khách hàng trong mọi vấn đề liên quan đến việc lựa chọn và sử dụng nước hoa. Không chỉ là một cửa hàng bán lẻ nước hoa thông thường, chúng tôi còn là một trung tâm nơi mọi người có thể tìm kiếm thông tin và kiến thức về thế giới mùi hương. Ngoài ra, chúng tôi luôn đặt mức giá cạnh tranh và cam kết về chất lượng sản phẩm, giúp khách hàng có được sự hài lòng cao nhất mỗi khi mua sắm tại Fleurs. Sự đa dạng trong sản phẩm cùng với dịch vụ chăm sóc khách hàng tận tình và chuyên nghiệp là những điểm mạnh đặc biệt của chúng tôi, giúp chúng tôi phục vụ và thu hút cộng đồng  yêu nước hoa.
         </p>
         <div className="grid grid-cols-1 gap-6 my-6">
           <img
-            src="/imgs/test.jpg"
+            src="/imgs/about-us/test4.png"
             alt="Cat 1"
-            className="rounded-lg shadow-lg w-full h-[420px] object-cover"
+            className="rounded-lg shadow-lg w-full h-[1110px] object-cover"
           />
         </div>
-      </div>
-
-      {/* Core value Section */}
-      <div className="my-12">
-        <h2 className="text-center font-medium">Giá trị cốt lõi</h2>
-        <hr className="my-4 w-2/6 mx-auto" />
-        <p className="text-center text-lg">
-          Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ
-          luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt,
-          mang lại những giá trị lâu dài cho doanh nghiệp.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-          <div className="bg-white dark:bg-gray-800 border rounded-lg p-6 text-center">
-            <img
-              src="/imgs/test.jpg"
-              alt="Chất lượng"
-              className="mx-auto mb-4 w-12 h-12"
-            />
-            <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-            <p className="text-gray-600 dark:text-gray-400">
-              Số lượng sản phẩm và dịch vụ tốt nhất với đa dạng, phong phú sẽ
-              đáp ứng tất cả nhu cầu mua sắm của bạn.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 border rounded-lg p-6 text-center">
-            <img
-              src="/imgs/test.jpg"
-              alt="Chăm sóc khách hàng"
-              className="mx-auto mb-4 w-12 h-12"
-            />
-            <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-            <p className="text-gray-600 dark:text-gray-400">
-              Tất cả khách hàng mua sắm tại ForCat có tổng hóa đơn mua sắm tích
-              lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 border rounded-lg p-6 text-center">
-            <img
-              src="/imgs/test.jpg"
-              alt="Vận chuyển miễn phí"
-              className="mx-auto mb-4 w-12 h-12"
-            />
-            <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-            <p className="text-gray-600 dark:text-gray-400">
-              Miễn phí vận chuyển nội thành TP Hồ Chí Minh cho các đơn hàng từ
-              399.000đ trở lên.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 border rounded-lg p-6 text-center">
-            <img
-              src="/imgs/test.jpg"
-              alt="Vận chuyển miễn phí"
-              className="mx-auto mb-4 w-12 h-12"
-            />
-            <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-            <p className="text-gray-600 dark:text-gray-400">
-              Miễn phí vận chuyển nội thành TP Hồ Chí Minh cho các đơn hàng từ
-              399.000đ trở lên.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 border rounded-lg p-6 text-center">
-            <img
-              src="/imgs/test.jpg"
-              alt="Vận chuyển miễn phí"
-              className="mx-auto mb-4 w-12 h-12"
-            />
-            <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-            <p className="text-gray-600 dark:text-gray-400">
-              Miễn phí vận chuyển nội thành TP Hồ Chí Minh cho các đơn hàng từ
-              399.000đ trở lên.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 border rounded-lg p-6 text-center">
-            <img
-              src="/imgs/test.jpg"
-              alt="Vận chuyển miễn phí"
-              className="mx-auto mb-4 w-12 h-12"
-            />
-            <p className="font-bold text-lg">Chất lượng thật - Giá trị thật</p>
-            <p className="text-gray-600 dark:text-gray-400">
-              Miễn phí vận chuyển nội thành TP Hồ Chí Minh cho các đơn hàng từ
-              399.000đ trở lên.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Team Section */}
-      <div className="my-12">
-        <h2 className="text-center font-medium mb-4">Đội ngũ phát triển</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-          <div>
-            <img
-              src="/imgs/test.jpg"
-              alt="Lê Đức Mạnh"
-              className="rounded-lg shadow-lg mb-4"
-            />
-            <p className="font-bold">Lê Đức Mạnh</p>
-          </div>
-          <div>
-            <img
-              src="/imgs/test.jpg"
-              alt="Phan Nguyễn Hải Yến"
-              className="rounded-lg shadow-lg mb-4"
-            />
-            <p className="font-bold">Phan Nguyễn Hải Yến</p>
-          </div>
-          <div>
-            <img
-              src="/imgs/test.jpg"
-              alt="Nguyễn Thị Thùy Trinh"
-              className="rounded-lg shadow-lg mb-4"
-            />
-            <p className="font-bold">Nguyễn Thị Thùy Trinh</p>
-          </div>
-        </div>
-      </div>
+      </div> 
     </div>
   );
 }

@@ -70,7 +70,7 @@ export default function PrivacyPolicyPage() {
         <p className="text-lg">
       
         </p>
-        <p className="text-lg">- Email: catcorner.contact@gmail.com</p>
+        <p className="text-lg">- Email: fleurs.hoa@gmail.com</p>
         <p className="text-lg">- Hotline: 0975.849.949</p>
       </div>
 
