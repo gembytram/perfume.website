@@ -10,6 +10,7 @@ import { Toaster } from "sonner";
 import "./globals.css";
 import { Providers } from "./providers";
 import { PageLoader } from "@/components/(general)/layouts/page-loader";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({
             </ThemeProvider>
           </Providers>
         </PageLoader>
+        <GoogleAnalytics gaId="G-EXZM4FE75Y" />
       </body>
     </html>
   );
