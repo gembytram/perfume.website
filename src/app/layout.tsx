@@ -12,6 +12,7 @@ import { Providers } from "./providers";
 import { PageLoader } from "@/components/(general)/layouts/page-loader";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { FacebookPixelEvents } from "@/components/pixel-events";
+import { Suspense } from "react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -45,7 +46,9 @@ export default function RootLayout({
           </Providers>
         </PageLoader>
         <GoogleAnalytics gaId="G-EXZM4FE75Y" />
-        <FacebookPixelEvents />
+        <Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>
       </body>
     </html>
   );
