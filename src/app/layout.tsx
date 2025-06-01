@@ -59,6 +59,27 @@ export default function RootLayout({
   `}
       </Script>
 
+      {/* Hàm report conversion */}
+      <Script id="gtag-report-conversion" strategy="afterInteractive">
+        {`
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) !== 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17039858517/blJzCM2o6b4aENW2nr0_',
+              'value': 1.0,
+              'currency': 'VND',
+              'event_callback': callback
+            });
+            return false;
+          }
+          window.gtag_report_conversion = gtag_report_conversion; // expose function globally
+        `}
+      </Script>
+
       <body className="ml:bg-white md:bg-bg-1 dark:bg-bg-dark-1">
         <PageLoader>
           <Providers>
