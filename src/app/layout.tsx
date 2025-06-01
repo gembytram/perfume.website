@@ -14,6 +14,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { FacebookPixelEvents } from "@/components/pixel-events";
 import { Suspense } from "react";
 
+import { GoogleTagManager } from "@next/third-parties/google";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
 });
@@ -30,6 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className={montserrat.className}>
+      <GoogleTagManager gtmId="AW-17039858517" />
+      <GoogleTagManager gtmId="AW-17126219862" />
       <body className="ml:bg-white md:bg-bg-1 dark:bg-bg-dark-1">
         <PageLoader>
           <Providers>
