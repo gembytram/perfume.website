@@ -15,6 +15,7 @@ import { FacebookPixelEvents } from "@/components/pixel-events";
 import { Suspense } from "react";
 
 import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -32,8 +33,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className={montserrat.className}>
-      <GoogleTagManager gtmId="AW-17039858517" />
-      <GoogleTagManager gtmId="AW-17126219862" />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17039858517"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17039858517');
+  `}
+      </Script>
+
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17126219862"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17126219862');
+  `}
+      </Script>
+
       <body className="ml:bg-white md:bg-bg-1 dark:bg-bg-dark-1">
         <PageLoader>
           <Providers>
