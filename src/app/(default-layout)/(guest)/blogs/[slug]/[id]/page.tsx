@@ -116,7 +116,7 @@ export default async function BlogDetailPage({
                 {article.related_articles.map((related: any, index: number) => (
                   <li key={index}>
                     <a
-                      href={`/blog/${related.article_slug}/${encodeURIComponent(
+                      href={`/blogs/${related.article_slug}/${encodeURIComponent(
                         related.article_id_hashed
                       )}`}
                       className="text-teal-600 dark:text-teal-400 hover:underline font-medium">
