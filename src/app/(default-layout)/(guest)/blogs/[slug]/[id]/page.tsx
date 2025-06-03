@@ -73,20 +73,20 @@ export default async function BlogDetailPage({
         style={{ height: "100vh" }} // Nội dung bên trái cuộn được
       >
         {/* Ảnh tiêu đề */}
-        <Image
+        {/* <Image
           src={article.article_avt}
           alt={article.article_name}
           width={1200}
           height={600}
           className="rounded-lg mb-6"
-        />
+        /> */}
 
-        {/* Tiêu đề và meta */}
+        {/* Tiêu đề và meta
         <h1 className="text-3xl font-bold mb-2">{article.article_name}</h1>
         <p className="text-muted-foreground mb-4">
           {article.article_author_name} -{" "}
           {new Date(article.article_published_date).toLocaleDateString()}
-        </p>
+        </p> */}
 
         {/* Hashtags */}
         <div className="flex gap-2 mb-6">
