@@ -105,7 +105,9 @@ export default async function BlogDetailPage({
           <div
             className="prose lg:prose-lg"
             dangerouslySetInnerHTML={{ __html: article.article_content }}></div>
-
+          <div className="mt-5">
+            <NewestProducts />
+          </div>
           {/* Bài viết liên quan */}
           {article.related_articles && (
             <section className="mt-8">
@@ -148,9 +150,6 @@ export default async function BlogDetailPage({
             ))}
           </ul>
         </aside>
-      </div>
-      <div className="mt-5">
-        <NewestProducts />
       </div>
     </>
   );

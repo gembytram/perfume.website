@@ -34,7 +34,7 @@ export default function NewestProducts() {
         const response = await fetch(`${PRODUCT_LIST_URL}/getNewestProducts`);
         const data = await response.json();
         if (data.success) {
-          setProducts(data.data.slice(0, 8));
+          setProducts(data.data.slice(0, 9));
         }
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -45,7 +45,7 @@ export default function NewestProducts() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 mb-6 sm:mb-7 md:mb-8">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 mb-6 sm:mb-7 md:mb-8">
       {products.map((product, index) => (
         <div key={`new product ${index}`} className="flex justify-center">
           <CardProduct
