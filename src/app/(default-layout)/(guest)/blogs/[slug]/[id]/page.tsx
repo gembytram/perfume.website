@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { GUEST_DETAIL_BLOG_URL } from "@/utils/constants/urls";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import NewestProducts from "@/components/(home)/newest-products";
 
 // Định nghĩa kiểu dữ liệu cho outline
 interface OutlineItem {
@@ -66,14 +67,15 @@ export default async function BlogDetailPage({
       }) || [];
 
   return (
-    <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4">
-      {/* Nội dung bài viết */}
-      <article
-        className="lg:col-span-3 bg-white dark:bg-gray-800 px-4 py-4 rounded-lg overflow-y-auto"
-        style={{ height: "100vh" }} // Nội dung bên trái cuộn được
-      >
-        {/* Ảnh tiêu đề */}
-        {/* <Image
+    <>
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4">
+        {/* Nội dung bài viết */}
+        <article
+          className="lg:col-span-3 bg-white dark:bg-gray-800 px-4 py-4 rounded-lg overflow-y-auto"
+          style={{ height: "100vh" }} // Nội dung bên trái cuộn được
+        >
+          {/* Ảnh tiêu đề */}
+          {/* <Image
           src={article.article_avt}
           alt={article.article_name}
           width={1200}
@@ -81,71 +83,75 @@ export default async function BlogDetailPage({
           className="rounded-lg mb-6"
         /> */}
 
-        {/* Tiêu đề và meta
+          {/* Tiêu đề và meta
         <h1 className="text-3xl font-bold mb-2">{article.article_name}</h1>
         <p className="text-muted-foreground mb-4">
           {article.article_author_name} -{" "}
           {new Date(article.article_published_date).toLocaleDateString()}
         </p> */}
 
-        {/* Hashtags */}
-        <div className="flex gap-2 mb-6">
-          {article.article_tags.map((tag: string, index: number) => (
-            <span
-              key={index}
-              className="px-3 py-1 text-sm bg-[#FFF1D0] text-black rounded-full">
-              #{tag}
-            </span>
-          ))}
-        </div>
+          {/* Hashtags */}
+          <div className="flex gap-2 mb-6">
+            {article.article_tags.map((tag: string, index: number) => (
+              <span
+                key={index}
+                className="px-3 py-1 text-sm bg-[#FFF1D0] text-black rounded-full">
+                #{tag}
+              </span>
+            ))}
+          </div>
 
-        {/* Nội dung bài viết */}
-        <div
-          className="prose lg:prose-lg"
-          dangerouslySetInnerHTML={{ __html: article.article_content }}></div>
+          {/* Nội dung bài viết */}
+          <div
+            className="prose lg:prose-lg"
+            dangerouslySetInnerHTML={{ __html: article.article_content }}></div>
 
-        {/* Bài viết liên quan */}
-        {article.related_articles && (
-          <section className="mt-8">
-            <h3 className="text-2xl font-bold mb-4">Bài viết liên quan</h3>
-            <ul className="list-disc list-inside">
-              {article.related_articles.map((related: any, index: number) => (
-                <li key={index}>
-                  <a
-                    href={`/blog/${related.article_slug}/${encodeURIComponent(
-                      related.article_id_hashed
-                    )}`}
-                    className="text-teal-600 dark:text-teal-400 hover:underline font-medium">
-                    {related.article_name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-      </article>
+          {/* Bài viết liên quan */}
+          {article.related_articles && (
+            <section className="mt-8">
+              <h3 className="text-2xl font-bold mb-4">Bài viết liên quan</h3>
+              <ul className="list-disc list-inside">
+                {article.related_articles.map((related: any, index: number) => (
+                  <li key={index}>
+                    <a
+                      href={`/blog/${related.article_slug}/${encodeURIComponent(
+                        related.article_id_hashed
+                      )}`}
+                      className="text-teal-600 dark:text-teal-400 hover:underline font-medium">
+                      {related.article_name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </article>
 
-      {/* Sidebar */}
-      <aside
-        className="bg-white dark:bg-gray-800 rounded-lg p-6 h-fit sticky top-6" // Sticky để cố định
-        style={{ maxHeight: "calc(100vh - 2rem)", overflowY: "auto" }} // Cuộn nội dung bên phải
-      >
-        <h2 className="text-xl font-bold mb-4">Nội dung</h2>
-        <ul className="list-inside text-gray-700 space-y-2">
-          {outline.map(({ level, text, id }, index) => (
-            <li
-              key={index}
-              style={{ marginLeft: `${(level - 2) * 1.5}rem` }}
-              className="text-gray-600 text-sm">
-              <a
-                href={`#${id}`}
-                className="text-teal-600 dark:text-teal-400 hover:underline font-medium">
-                {text}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </aside>
-    </div>
+        {/* Sidebar */}
+        <aside
+          className="bg-white dark:bg-gray-800 rounded-lg p-6 h-fit sticky top-6" // Sticky để cố định
+          style={{ maxHeight: "calc(100vh - 2rem)", overflowY: "auto" }} // Cuộn nội dung bên phải
+        >
+          <h2 className="text-xl font-bold mb-4">Nội dung</h2>
+          <ul className="list-inside text-gray-700 space-y-2">
+            {outline.map(({ level, text, id }, index) => (
+              <li
+                key={index}
+                style={{ marginLeft: `${(level - 2) * 1.5}rem` }}
+                className="text-gray-600 text-sm">
+                <a
+                  href={`#${id}`}
+                  className="text-teal-600 dark:text-teal-400 hover:underline font-medium">
+                  {text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      </div>
+      <div className="mt-5">
+        <NewestProducts />
+      </div>
+    </>
   );
 }
