@@ -85,8 +85,12 @@ export default function ContactSection() {
             chức các cuộc thi thú vị với những phần quà hấp dẫn mỗi tháng!
           </p>
           <div className="flex gap-4">
-            {["fb_icon", "instagam_icon", "tiktok_icon"].map((icon) => (
-              <Link key={icon} href="#" className="hover:opacity-80">
+            {[
+              { icon: "fb_icon", url: "https://www.facebook.com/profile.php?id=61572381697756" },
+              { icon: "instagam_icon", url: "https://www.instagram.com/_fleurs.boutique_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+              { icon: "tiktok_icon", url: "https://www.tiktok.com/@fleursbouti?_t=ZS-8vjtftZXrc4&_r=1" },
+              ].map(({ icon, url }) => (
+              <Link key={icon} href={url} target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
                 <Image
                   src={`/imgs/home/${icon}.svg`}
                   alt={icon.split("_")[0]}
@@ -102,3 +106,5 @@ export default function ContactSection() {
     </div>
   );
 }
+
+
