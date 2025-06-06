@@ -160,7 +160,7 @@ export default function BlogListPage() {
         <div className="mb-6">
           <h2 className="text-xl font-bold mb-4">Chủ đề hấp dẫn</h2>
           <div className="flex flex-wrap gap-2">
-            {["#Fleurs", "#Nuochoanu", "#Huongdanxitnuochoa", "#Nuochoatinhte"].map((tag, index) => (
+            {["Fleurs", "Nuochoanu", "Huongdanxitnuochoa", "Nuochoatinhte"].map((tag, index) => (
               <span
                 key={index}
                 className="px-3 py-1 text-sm bg-pri-5 text-black rounded-full">
