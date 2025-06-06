@@ -433,58 +433,6 @@ export default function OrderInformationPage() {
             </div>
           </div>
         </form>
-
-        {/* Mã giảm giá */}
-        <div className="mt-6">
-          <h3 className="font-bold mb-2 text-center">Phiếu giảm giá</h3>
-          <hr className="mb-4 dark:border-white" />
-          {["Giảm giá đơn hàng", "Miễn phí vận chuyển"].map((type) => (
-            <div key={type} className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">{type}</h3>
-              <div className="flex items-center border border-gray-300 dark:border-none dark:bg-zinc-900 rounded-lg px-3 py-2 mb-3 gap-2">
-                <Ticket className="text-gray-600 dark:text-white" />
-                <span className="text-sm text-gray-600 dark:text-white">
-                  Chọn mã giảm giá
-                </span>
-                <ChevronRight className="ml-auto text-gray-500 text-sm dark:text-white" />
-              </div>
-              {demoCoupons
-                .filter((coupon) => coupon.type === type)
-                .map((coupon) => (
-                  <div
-                    key={coupon.id}
-                    className="flex items-stretch border border-gray-300 dark:border-none dark:bg-zinc-900 rounded-lg overflow-hidden">
-                    {/* Image Section */}
-                    <div className="w-24 flex-shrink-0">
-                      <img
-                        src={coupon.image}
-                        alt="coupon"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    {/* Content Section */}
-                    <div className="flex flex-col flex-grow p-4">
-                      <h4 className="font-bold text-base text-gray-800 dark:text-white">
-                        {coupon.title}
-                      </h4>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">
-                        {coupon.description}
-                      </p>
-                      <p className="text-sm text-gray-400 dark:text-gray-300">
-                        Tối đa: {coupon.maxDiscount}
-                      </p>
-                    </div>
-                    {/* Discount Section */}
-                    <div className="bg-orange-500 text-white px-4 flex items-center justify-center text-lg font-bold">
-                      {coupon.discount}
-                    </div>
-                  </div>
-                ))}
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Sản phẩm đặt mua */}
       <section className="lg:col-span-2 bg-white rounded-lg p-6 shadow-md h-fit dark:bg-gray-800">
         <h3 className="font-bold mb-2 text-center">Sản phẩm đặt mua</h3>
@@ -592,7 +540,7 @@ export default function OrderInformationPage() {
               className="text-teal-500 hover:underline dark:text-teal-300">
               Chính sách bảo mật
             </Link>{" "}
-            của CatCorner.
+            của Fleurs.
           </p>
         </div>
       </section>
