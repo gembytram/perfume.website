@@ -6,5 +6,28 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Thêm các trang khác tại đây nếu cần -->
+  <url>
+    <loc>https://perfume-website-woad.vercel.app/blogs</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://perfume-website-woad.vercel.app/coupons</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://perfume-website-woad.vercel.app/about-us</loc>
+    <lastmod>2025-05-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://perfume-website-woad.vercel.app/privacy-policy</loc>
+    <lastmod>2025-05-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
