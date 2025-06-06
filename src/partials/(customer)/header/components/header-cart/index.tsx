@@ -64,7 +64,7 @@ export default function CustomerHeaderCart() {
 
           {cartItems.length === 0 ? (
             <p className="text-center text-gray-500 dark:text-gray-300">
-              Ấn xem giỏ hàng để coi bạn đã chọn những gì nào
+              Ấn xem giỏ hàng để coi bạn chọn những gì nào
             </p>
           ) : (
             <ul className="divide-y divide-gray-200 dark:divide-gray-700 max-h-72 overflow-y-auto">
