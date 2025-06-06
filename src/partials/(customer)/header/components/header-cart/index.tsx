@@ -59,12 +59,12 @@ export default function CustomerHeaderCart() {
 
         <div className="py-4">
           <h3 className="font-medium text-gray-400 dark:text-white px-4 pb-2">
-            Sản phẩm mới thêm
+            Sản phẩm bạn chọn sẽ được nằm trong giỏ hàng
           </h3>
 
           {cartItems.length === 0 ? (
             <p className="text-center text-gray-500 dark:text-gray-300">
-              Chưa có sản phẩm nào
+              Ấn xem giỏ hàng để coi bạn đã chọn những gì nào
             </p>
           ) : (
             <ul className="divide-y divide-gray-200 dark:divide-gray-700 max-h-72 overflow-y-auto">
