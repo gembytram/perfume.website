@@ -68,7 +68,7 @@ export default function CustomerHeaderCart() {
             </p>
           ) : (
             <ul className="divide-y divide-gray-200 dark:divide-gray-700 max-h-72 overflow-y-auto">
-              {cartItems.slice(0, 3).map((item) => (
+              {[...cartItems].reverse().slice(0, 3).map((item) => (
                 <li
                   key={item.product_id}
                   className="p-4 flex hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
