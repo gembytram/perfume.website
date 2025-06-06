@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -29,6 +28,7 @@ export default function BreadCrumb({
   const secondToLastBreadcrumb =
     shouldTruncate && breadcrumbs[breadcrumbs.length - 2];
   const lastBreadcrumb = breadcrumbs[breadcrumbs.length - 1];
+
   const hiddenBreadcrumbs =
     shouldTruncate && breadcrumbs.slice(1, breadcrumbs.length - 2);
 
@@ -36,7 +36,7 @@ export default function BreadCrumb({
     <div className="flex mt-24 w-4/5 mx-auto">
       <Breadcrumb className="ml-4">
         <BreadcrumbList>
-          {/* Breadcrumb đầu tiên */}
+          {/* Hiển thị breadcrumb đầu tiên */}
           <BreadcrumbItem>
             <BreadcrumbLink
               href={firstBreadcrumb.href}
@@ -46,7 +46,7 @@ export default function BreadCrumb({
             </BreadcrumbLink>
           </BreadcrumbItem>
 
-          {/* Dấu ... nếu cần ẩn */}
+          {/* Dấu "..." nếu cần ẩn */}
           {shouldTruncate && hiddenBreadcrumbs && (
             <>
               <BreadcrumbSeparator />
@@ -59,12 +59,12 @@ export default function BreadCrumb({
                   <DropdownMenuContent align="start">
                     {hiddenBreadcrumbs.map((crumb, index) => (
                       <DropdownMenuItem key={index}>
-                        <Link
-                          href={crumb.href || "#"}
+                        <BreadcrumbLink
+                          href={crumb.href}
                           className="text-gray-500 hover:text-teal-600 dark:text-gray-300"
                         >
                           {crumb.label}
-                        </Link>
+                        </BreadcrumbLink>
                       </DropdownMenuItem>
                     ))}
                   </DropdownMenuContent>
@@ -73,7 +73,7 @@ export default function BreadCrumb({
             </>
           )}
 
-          {/* Breadcrumb gần cuối */}
+          {/* Hiển thị breadcrumb liền kề cuối (nếu có) */}
           {shouldTruncate && secondToLastBreadcrumb && (
             <>
               <BreadcrumbSeparator />
@@ -88,7 +88,7 @@ export default function BreadCrumb({
             </>
           )}
 
-          {/* Breadcrumb cuối */}
+          {/* Hiển thị breadcrumb cuối cùng */}
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <BreadcrumbPage className="text-black font-semibold dark:text-gray-400">
