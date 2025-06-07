@@ -433,6 +433,7 @@ export default function OrderInformationPage() {
             </div>
           </div>
         </form>
+      </section>
       {/* Sản phẩm đặt mua */}
       <section className="lg:col-span-2 bg-white rounded-lg p-6 shadow-md h-fit dark:bg-gray-800">
         <h3 className="font-bold mb-2 text-center">Sản phẩm đặt mua</h3>
