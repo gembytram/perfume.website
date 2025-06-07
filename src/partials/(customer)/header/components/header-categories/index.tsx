@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { PRODUCT_BY_CATEGORY_URL } from "@/utils/constants/urls";
 import { ChevronDown } from "lucide-react";
@@ -11,6 +12,8 @@ interface Product {
   price: number;
   discountPrice: number;
   image: string;
+  product_slug: string;
+  product_id_hashed: string;
 }
 
 interface Category {
@@ -24,6 +27,8 @@ export default function CustomerHeaderCategories() {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+
+  const router = useRouter();
 
   // Fetch danh mục và sản phẩm từ API
   useEffect(() => {
@@ -48,7 +53,9 @@ export default function CustomerHeaderCategories() {
             image: c.category_img, // Sửa lỗi, lấy hình ảnh danh mục
             products: c.products.map((p: any) => ({
               _id: p._id,
+              product_id_hashed: p.product_id_hashed,
               name: p.product_name,
+              product_slug: p.product_slug,
               price: p.product_variants[0]?.variant_price || 0, // Lấy giá đầu tiên nếu có
               discountPrice: p.product_variants[0]?.discounted_price || 0,
               image: p.product_imgs || "/imgs/test.jpg", // Sửa lỗi, lấy hình ảnh sản phẩm
@@ -81,7 +88,7 @@ export default function CustomerHeaderCategories() {
   return (
     <div className="relative group">
       {/* Trigger */}
-      <div className="hidden laptop:flex cursor-pointer text-pri-1 dark:text-white hover:text-pri-3 dark:hover:text-teal-300">
+      <div className="hidden laptop:flex cursor-pointer text-pri-1 dark:text-white hover:text-teal-700 dark:hover:text-teal-300">
         <span className="ml-2 font-semibold mr-2">Danh mục</span>
         <ChevronDown />
       </div>
@@ -132,7 +139,14 @@ export default function CustomerHeaderCategories() {
                 <p className="text-red-500">{error}</p>
               ) : selectedProducts.length > 0 ? (
                 selectedProducts.map((product, index) => (
-                  <div key={index} className="flex flex-col items-center">
+                  <div
+                    key={index}
+                    className="flex flex-col items-center transition-transform duration-200 hover:scale-105 hover:shadow-lg cursor-pointer"
+                    onClick={() =>
+                      router.push(
+                        `/${product.product_slug}?pid=${product.product_id_hashed}`
+                      )
+                    }>
                     <Image
                       src={product.image || "/imgs/test.jpg"}
                       alt={product.name}

@@ -11,11 +11,7 @@ export default function CustomerHeaderNavigation() {
           className="phone:hidden laptop:block text-pri-1 dark:text-white hover:text-pri-3 dark:hover:text-teal-300 font-semibold laptop:text-base desktop:text-base tablet:text-sm">
           Bài viết
         </Link>
-        <Link
-          href="/search-result?discount=true"
-          className="phone:hidden desktop:block text-pri-1 dark:text-white hover:text-pri-3 dark:hover:text-teal-300 font-semibold tablet:hidden">
-          Sản phẩm sale
-        </Link>
+
         <Link
           href="/coupons"
           className="phone:hidden desktop:block text-pri-1 dark:text-white hover:text-pri-3 dark:hover:text-teal-300 font-semibold tablet:hidden">
