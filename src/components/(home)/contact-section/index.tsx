@@ -53,53 +53,17 @@ export default function ContactSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
         {/* Messages Section */}
         <div>
-          <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-pri-1">
-            Tin nhắn
+          <h3 className="text-lg sm:text-lg font-semibold mb-4 sm:mb-6 text-pri-1">
+            Địa chỉ
           </h3>
-          <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 dark:text-gray-300">
-            Chỉ cần nhấn vào nút dưới đây hoặc quét mã QR để trò chuyện với
-            chúng tôi qua messenger, thật đơn giản và nhanh chóng!
+          <p className="text-base sm:text-base text-muted-foreground mb-6 sm:mb-8 dark:text-gray-300">
+            Số 1 Võ Văn Ngân, Linh Chiểu, Thủ Đức, Thành phố Hồ Chí Minh
           </p>
-          <div className="flex gap-4">
-            {[
-              {
-                icon: "fb_icon",
-                url: "https://www.facebook.com/profile.php?id=61572381697756",
-              },
-              {
-                icon: "instagam_icon",
-                url: "https://www.instagram.com/_fleurs.boutique_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-              },
-              {
-                icon: "tiktok_icon",
-                url: "https://www.tiktok.com/@fleursbouti?_t=ZS-8vjtftZXrc4&_r=1",
-              },
-              {
-                icon: "shoppee_icon",
-                url: "http://shopee.vn/nuochoafleurs",
-              },
-            ].map(({ icon, url }) => (
-              <Link
-                key={icon}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-80">
-                <Image
-                  src={`/imgs/home/${icon}.svg`}
-                  alt={icon.split("_")[0]}
-                  width={60}
-                  height={60}
-                  className="rounded-xl w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
-                />
-              </Link>
-            ))}
-          </div>
         </div>
 
         {/* Call us Section */}
         <div className="w-full mx-auto flex flex-col">
-          <h3 className="text-lg sm:text-xl font-semibold mb-4 text-pri-1">
+          <h3 className="text-lg sm:text-lg font-semibold mb-4 text-pri-1">
             Gọi cho chúng tôi
           </h3>
           <div className="space-y-2 mb-6 sm:mb-8">
@@ -108,7 +72,7 @@ export default function ContactSection() {
                 <Phone className="w-4 h-4 text-neutral-950" />
                 <Link
                   href={`tel:${phone}`}
-                  className="block text-sm sm:text-base text-muted-foreground hover:text-foreground dark:text-gray-300">
+                  className="block text-base sm:text-base text-muted-foreground hover:text-foreground dark:text-gray-300">
                   {phone}
                 </Link>
               </div>
@@ -116,7 +80,7 @@ export default function ContactSection() {
           </div>
           {/* Subscribe Section */}
           <div>
-            <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-4 text-pri-1">
+            <h3 className="text-lg sm:text-lg font-semibold mb-2 sm:mb-4 text-pri-1">
               Đăng ký nhận thông tin qua Email
             </h3>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -140,7 +104,7 @@ export default function ContactSection() {
 
         {/* Social Media Section */}
         <div className="flex flex-col">
-          <h3 className="text-lg sm:text-xl font-semibold mb-4 text-pri-1">
+          <h3 className="text-lg sm:text-lg font-semibold mb-4 text-pri-1">
             Kết nối với chúng tôi trên mạng xã hội
           </h3>
           <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 dark:text-gray-300">
