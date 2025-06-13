@@ -17,7 +17,7 @@ export default function NewProducts() {
         const response = await fetch(`${PRODUCT_LIST_URL}/getNewestProducts`);
         const data = await response.json();
         if (data.success) {
-          setProducts(data.data.slice(0, 8)); // Limit to 8 products
+          setProducts(data.data);
         }
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -62,17 +62,6 @@ export default function NewProducts() {
             />
           </div>
         ))}
-      </div>
-
-      <div className="flex justify-center">
-        <Link href="/products">
-          <Button
-            variant="link"
-            className="text-sm sm:text-base text-pri-1 dark:text-gray-200 font-bold">
-            Tất cả sản phẩm
-            <ArrowUpRight className="ml-1 w-4 h-4 sm:w-5 sm:h-5" />
-          </Button>
-        </Link>
       </div>
     </div>
   );
